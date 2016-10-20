@@ -1,0 +1,22 @@
+var animals={ 
+
+mammals:['bears','lions','whales','otters'], 
+
+birds:['penguins','ducks','swans','chickens'], 
+
+cats:['panther','mountain lion','leopard','snow tiger'], 
+
+insects: ['flea','mosquito','beetle','fly','grasshopper']
+
+};
+
+
+function getLastAnimals(obj) {
+	var arr=[];
+	for (var key in obj) { 
+		arr.push(animal[key][3]);
+	}
+	return arr;
+}
+
+getLastAnimals(animals);
